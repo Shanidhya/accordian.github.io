@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Accordian</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+</head>
+
+<body>
+    <h1>ACCORDION EAMPLE</h1>
+
+    <div id=pannel>
+
+        <h3>Telusko Learning</h3>
+        <p>Telusko learning is one of the largest tech educational ouTube channels in India</p>
+
+        <h3>Simple Snippets </h3>
+        <p>Simple Snippets is an upcoming tech educational channel with more than 30k subcribers
+            Simple snippets was started 3 years back .Tanmay Sakpal is the
+            founder of simple snippets.and some random text
+        </p>
+
+        <h3> MKBHD</h3>
+        <p>This is one of my favourite channels</p>
+
+    </div>
+</body>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="jqueryui/jquery-ui.js" type="text/javascript">
+</script>
+<script>
+    $("#pannel").accordion({
+        collapsible: true,
+        event: "mouseover",
+        animate: 300,
+        active: 0,
+        heightStyle: true,
+        icons: { header: "ui-icon-plus", activeHeader: "ui-icon-minus" }
+    });
+</script>
+
+</html>
